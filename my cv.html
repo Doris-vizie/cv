@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Doris' personal site</title>
+        <link rel="style sheet">
+        <style>
+            body{background-color: rgb(118, 141, 133);}
+        </style>
+    </head>
+<!-- inserting a table such that my profile picture and bio data are on the same row -->
+    <body>
+        <h2>About me</h2>
+        <table cell spacing="20">
+            <tr>
+               <td>
+                <img src="image.jpg" width="90" height="90" alt="Doris profile picture">
+               </td>
+               <td>
+                <p><strong>Doris Musiime</strong><br>
+                    I am a student at Makerere university<br>
+                    I am a Ugandan<br>
+                    I am studying Bachelors of software engineering
+                </p>
+                <p><a href="hobbies.html">My hobbies and interests</a></p>
+               </td>
+            </tr>
+        </table>
+        <!-- insert a table to organise the education experience data -->
+        
+        <table border="1">
+            <caption><strong>Education experience</strong></caption>
+            <thead>
+              <tr>
+                <th>date</th>
+                <th>institute attended</th>
+                <th>certificate earned</th>
+              </tr>
+            </thead>
+
+          <tbody>
+            <tr>
+                <td>this year</td>
+                <td>makerere university</td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td>2019-2021</td>
+                <td>immaculate heart girls school</td>
+                <td>UACE</td>
+            </tr>
+            <tr>
+                <td>2015-2018</td>
+                <td>maryhill high school</td>
+                <td>UCE</td>
+            </tr>
+            <tr>
+                <td>2013-2014</td>
+                <td>parental care school</td>
+                <td>PLE</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- inserting a word document about the website -->
+       <p>
+        <h4>brief explanation about the website</h4>
+        <a href="about me.docx">click here</a>
+       </p>
+        <h4>contact-me</h4>
+        <form>
+            <div>
+               Name <input type="text" placeholder="full name">
+            </div>
+        </form>
+        <form>
+            <p>
+                <label for="gender">gender:</label>
+                <input list="gender" placeholder="gender"/>
+                <datalist id="gender">
+                    <option value="male">
+                    <option value="female">
+                </datalist>
+            </p>
+        </form>
+        <form action="mailto:dorisvizie@gmail.com" method="get" enctype="text/plain">
+            <p>
+            <div>
+                <label for="email">Email:
+                    <input type="text" name="email" id="email" placeholder="email">
+                </label>
+            </div>
+            </p>
+            <div>
+                <label>Comments:</label><br>
+                <textarea name="comments" rows="10" cols="40">what do you think</textarea>
+            </div>
+            <div>
+               <input type="submit" name="submit" value="submit"/>
+            </div>
+        </form>
+    </body>
+</html>
